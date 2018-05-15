@@ -1,0 +1,5 @@
+grad <- read.csv("d:/performance_grading.csv")
+str(grad)
+library(ggplot2)
+ggplot(grad)+geom_bar(aes(x=grades),fill="blue")
+table(grad$grades)
